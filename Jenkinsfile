@@ -9,7 +9,7 @@ pipeline{
             //using the slave node ubuntu
             steps{
                 sshagent(['ubuntu']){
-                   sh 'ssh -o StrictHostKeyChecking=no ubuntu@13.58.40.7 sudo docker run -d -p 80:8080 menakakarichiyappakumar/springboot'
+                   sh 'ssh -o StrictHostKeyChecking=no ubuntu@18.221.32.39 sudo docker run -d -p 80:8080 menakakarichiyappakumar/springboot'
                 }
             }
         }
